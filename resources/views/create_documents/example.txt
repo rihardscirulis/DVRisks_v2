@@ -1,0 +1,16 @@
+                                    <select class="form-control" name="appraiser" id="appraiser" required>
+                                        <option selected disabled hidden value="">--- Riska vērtējumā piedalās ---</option>
+                                        @foreach ($authorityList as $authority)
+                                            <optgroup label="{{$authority->authorityTitle}}">
+                                                @foreach ($personList as $person)
+                                                    @foreach ($personAuthorityList as $personAuthority)
+                                                            @if ($person->personID == $personAuthority->personID)
+                                                                @if ($authority->authorityID == $personAuthority->personAuthorityID)
+                                                                    <option value="{{$person->personID}}">{{$person->personName}} {{$person->personSurname}}</option>
+                                                                @endif
+                                                            @endif
+                                                    @endforeach
+                                                @endforeach
+                                            </optgroup>
+                                        @endforeach
+                                    </select>

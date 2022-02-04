@@ -1,0 +1,31 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Environment extends Model
+{
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+    */
+    protected $guarded = [];
+
+    public function authority() {
+        return $this->belongsTo(Authority::class);
+    }
+
+    public function workplaces() {
+        return $this->hasMany(Workplace::class);
+    }
+
+    public function positions() {
+        return $this->hasMany(Position::class);
+    }
+
+    public function personnels() {
+        return $this->hasMany(Personnel::class);
+    }
+}

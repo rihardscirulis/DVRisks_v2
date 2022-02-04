@@ -1,0 +1,223 @@
+/* === Navigation bar CSS code === */
+#navbarContent div#app nav.navbar {
+    background-color: rgb(57, 141, 243) !important;
+}
+
+#navbarContent a.nav-link {
+    font-weight: bold;
+    background-color: rgb(57, 141, 243) !important;;
+    border: none;
+    color: white;
+    opacity: 0.8;
+    transition: 1s;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+#navbarContent a.nav-link:hover {
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+}
+
+#navbarContent li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#navbarContent div.dropdown-menu {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    display: none;
+    position: absolute;    
+}
+
+#navbarContent div.dropdown-menu a.dropdown-item {
+    font-weight: bold;
+    background-color: rgb(57, 141, 243) !important;;
+    border: none;
+    color: white;
+    opacity: 1;
+    transition: 0.6s;
+    display: block;
+}
+
+#navbarContent li.dropdown:hover div.dropdown-menu {
+    display: block;
+} 
+
+#navbarContent div.dropdown-menu a.dropdown-item:hover {
+    opacity: 0.8;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+#navbarContent div.dropdown-divider {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+/* =================================== */
+body {
+    background-color: rgba(238, 238, 238, 0.843);
+}
+
+div#navbarContent {
+    -webkit-box-shadow: 5px 5px 5px rgb(189, 189, 189);
+    -moz-box-shadow:    5px 5px 5px rgb(189, 189, 189);
+    box-shadow:         5px 5px 5px rgb(189, 189, 189);
+    z-index:999;
+}
+
+h1 {
+    text-align: center;
+}
+/* === All forms CSS style code === */
+#formField {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#formField #requiredText {
+    color: red;
+}
+
+#formField #noteForFactorFields {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+#formField .form-group {
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+    border: 1px solid black;
+}
+
+div#formField div#inputFactorRow {
+    margin-bottom: 25px;
+}
+
+div#formField div#inputRiskCauseRow {
+    margin-bottom: 25px;
+}
+
+div#formField div#inputAuthorityCabinetRow {
+    margin-bottom: 25px;
+}
+
+#formField .row {
+    margin-top: 10px;
+}
+#formField #addRow {
+    margin-top: 10px;
+}
+
+th {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+#formField #createDocumentTable {
+    margin-top: 20px;
+    font-size: 13px;
+}
+/* ================================= */
+ul.list-group li.list-group-item#factorGroup-FactorsList {
+    padding-left: 60px;
+}
+
+ul.list-group li#authority-environment-list {
+    padding-left: 40px;
+}
+
+ul.list-group li#authority-environment-position-list {
+    padding-left: 60px;
+}
+
+ul.list-group li#ungrouped-position-list {
+    padding-left: 40px;
+}
+
+ul.list-group li#authority-environment-position-staff-list {
+    padding-left: 80px;
+}
+
+ul.list-group li#factorGroup-FactorsList {
+    padding-left: 40px;
+}
+
+ul.list-group li#factorGroup-Factors-RiskCauseList {
+    padding-left: 80px;
+}
+
+ul.list-group li#factorGroup-Factors-RiskCause-RiskProcedureList {
+    padding-left: 100px;
+}
+
+ul.list-group li#authority-environmentList {
+    padding-left: 40px;
+}
+
+ul.list-group li#authority-environment-workLocationList {
+    padding-left: 60px;
+}
+
+ul.list-group li#authority-environment-position-workLocation-list {
+    padding-left: 80px;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+ul.list-group div.col span#boldFont {
+    font-weight: bold;
+}
+
+#formField .container #accordion span#boldFont {
+    font-weight: bold;
+}
+
+div.container div.card {
+    margin-top: 100px;
+}
+
+.container-sm, .container {
+    max-width: auto;
+}
+
+.container p#homeTextParagraph {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+div#homeText.container {
+    padding-bottom: 140px;
+}
+
+.container ol#homeOrderedList {
+    margin-left: 40px;
+}
+
+.container #messageAlerts {
+    margin-top: 120px;
+}
+
+#contentContainer {
+    margin-top: 150px;
+}
+
+#contentContainer div#spaceForSelectFactors {
+    padding-top: 100px;
+}
+
+#formField .container #accordion #cardMarginRemove {
+    margin-top: 15px !important;
+}
